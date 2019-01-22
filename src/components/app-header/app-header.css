@@ -1,0 +1,8 @@
+.app-header {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.app-header h1 {
+  margin-right: 2rem;
+}
