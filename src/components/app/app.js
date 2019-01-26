@@ -7,6 +7,11 @@ import TodoList from "../todo-list";
 import "./app.css";
 
 function App() {
+  const tododata = [
+    { label: "Drink Coffee", important: false, id: 1 },
+    { label: "Go in for sports", important: false, id: 2 },
+    { label: "Study Bible", important: false, id: 3 }
+  ];
   return (
     <div className="App">
       <AppHeader />
