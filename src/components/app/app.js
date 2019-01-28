@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <AppHeader />
       <SeachPanel />
-      <TodoList />
+      <TodoList todos={tododata} />
     </div>
   );
 }
