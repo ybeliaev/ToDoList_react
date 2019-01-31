@@ -1,3 +1,6 @@
 .seach-input {
   padding-left: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+  box-sizing: border-box;
 }
