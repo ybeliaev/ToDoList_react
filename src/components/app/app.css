@@ -6,5 +6,6 @@ ul {
 }
 .todo-app {
   margin: 10px auto;
+  padding: 10px;
   max-width: 500px;
 }
