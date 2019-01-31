@@ -7,5 +7,31 @@ ul {
 .todo-app {
   margin: 10px auto;
   padding: 10px;
-  max-width: 500px;
+  max-width: 450px;
+}
+.top-panel {
+  display: flex;
+  justify-content: space-between;
+}
+/******************/
+/* ripple affect */
+/******************/
+.ripple {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(0);
+  position: absolute;
+  opacity: 1;
+}
+.rippleEffect {
+  animation: rippleDrop 0.6s linear;
+}
+
+@keyframes rippleDrop {
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }

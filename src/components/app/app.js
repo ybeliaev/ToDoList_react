@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="todo-app">
       <AppHeader toDo={1} done={3} />
-      <div>
+      <div className="top-panel">
         <SeachPanel />
         <ItemStatusFilter />
       </div>

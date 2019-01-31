@@ -1,3 +1,7 @@
 .todo-list-item.important {
   color: brown;
 }
+.todo-list-item {
+  display: flex;
+  margin-right: auto;
+}

@@ -8,9 +8,10 @@ export default class TodoListItem extends Component {
   };
   render() {
     const { label, important } = this.props;
+    let classNames = "todo-list-item";
     const style = important ? "todo-list-item important" : "todo-list-item";
     return (
-      <span>
+      <span className={classNames}>
         <span className={style} onClick={this.onLabelClick}>
           {label}
         </span>
