@@ -16,9 +16,11 @@ function App() {
   ];
   return (
     <div className="App">
-      <AppHeader />
-      <SeachPanel />
-      <ItemStatusFilter />
+      <AppHeader toDo={1} done={3} />
+      <div>
+        <SeachPanel />
+        <ItemStatusFilter />
+      </div>
       <TodoList todos={tododata} />
     </div>
   );
