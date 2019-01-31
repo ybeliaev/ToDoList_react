@@ -15,7 +15,7 @@ function App() {
     { label: "Feed the cat", important: false, id: 4 }
   ];
   return (
-    <div className="App">
+    <div className="todo-app">
       <AppHeader toDo={1} done={3} />
       <div>
         <SeachPanel />

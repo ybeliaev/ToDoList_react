@@ -1,3 +1,10 @@
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+ul {
+  list-style: none;
+}
+.todo-app {
+  margin: 10px auto;
+  max-width: 500px;
+}
