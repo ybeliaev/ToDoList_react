@@ -2,6 +2,7 @@ import React from "react";
 
 import AppHeader from "../app-header";
 import SeachPanel from "../seach-panel";
+import ItemStatusFilter from "../item-status-filter";
 import TodoList from "../todo-list";
 
 import "./app.css";
@@ -11,12 +12,13 @@ function App() {
     { label: "Drink Coffee", important: false, id: 1 },
     { label: "Go in for sports", important: false, id: 2 },
     { label: "Study Bible", important: true, id: 3 },
-    { label: "Feed the cat", important: false, id: 3 }
+    { label: "Feed the cat", important: false, id: 4 }
   ];
   return (
     <div className="App">
       <AppHeader />
       <SeachPanel />
+      <ItemStatusFilter />
       <TodoList todos={tododata} />
     </div>
   );
