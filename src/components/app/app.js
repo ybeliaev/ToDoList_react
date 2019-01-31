@@ -10,7 +10,8 @@ function App() {
   const tododata = [
     { label: "Drink Coffee", important: false, id: 1 },
     { label: "Go in for sports", important: false, id: 2 },
-    { label: "Study Bible", important: false, id: 3 }
+    { label: "Study Bible", important: true, id: 3 },
+    { label: "Feed the cat", important: false, id: 3 }
   ];
   return (
     <div className="App">
