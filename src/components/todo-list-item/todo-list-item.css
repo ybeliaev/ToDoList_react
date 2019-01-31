@@ -3,5 +3,10 @@
 }
 .todo-list-item {
   display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding-left: 8px;
+}
+.todo-list-item-label {
   margin-right: auto;
 }

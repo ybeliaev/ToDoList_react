@@ -12,7 +12,7 @@ export default class TodoListItem extends Component {
     const style = important ? "todo-list-item important" : "todo-list-item";
     return (
       <span className={classNames}>
-        <span className={style} onClick={this.onLabelClick}>
+        <span className="todo-list-item-label" onClick={this.onLabelClick}>
           {label}
         </span>
         <button className="btn">
