@@ -1,5 +1,6 @@
 .todo-list-item.important {
-  color: brown;
+  color: rgb(155, 89, 182);
+  font-weight: 600;
 }
 .todo-list-item {
   display: flex;
@@ -12,4 +13,26 @@
 }
 .todo-list-item-label {
   margin-right: auto;
+}
+.btn-trash {
+  border: 2px solid brown;
+  background-color: rgb(255, 255, 255);
+  color: brown;
+}
+.btn-trash:hover,
+.btn-trash:active,
+.btn-trash:focus {
+  background-color: brown;
+  color: rgb(255, 255, 255);
+}
+.btn-exclamation {
+  border: 2px solid rgb(155, 89, 182);
+  background-color: rgb(255, 255, 255);
+  color: rgb(155, 89, 182);
+}
+.btn-exclamation:hover,
+.btn-exclamation:active,
+.btn-exclamation:focus {
+  background-color: rgb(155, 89, 182);
+  color: rgb(255, 255, 255);
 }

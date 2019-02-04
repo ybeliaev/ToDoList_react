@@ -31,10 +31,10 @@ export default class TodoListItem extends Component {
         <span className="todo-list-item-label" onClick={this.onLabelClick}>
           {label}
         </span>
-        <button className="btn" onClick={this.onMarkImportant}>
+        <button className="btn btn-exclamation" onClick={this.onMarkImportant}>
           <i className="fa fa-exclamation" />
         </button>
-        <button className="btn">
+        <button className="btn btn-trash">
           <i className="fa fa-trash-o" />
         </button>
       </span>
