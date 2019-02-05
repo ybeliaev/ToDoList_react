@@ -1,6 +1,6 @@
 .todo-list-item.important {
-  color: rgb(0, 115, 230);
-  font-weight: 600;
+  color: rgb(0, 204, 0);
+  font-weight: 500;
 }
 .todo-list-item {
   display: flex;
@@ -14,6 +14,10 @@
 .todo-list-item-label {
   flex: 1;
   cursor: pointer;
+  transition: all 0.2s;
+}
+.todo-list-item-label:hover {
+  margin-left: 5px;
 }
 .btn-trash {
   border: 2px solid brown;

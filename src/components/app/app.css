@@ -4,6 +4,11 @@
 }
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgba(185, 44, 39, 0.85),
+    rgb(21, 101, 192, 0.85)
+  );
 }
 ul {
   list-style: none;
