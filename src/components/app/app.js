@@ -23,7 +23,7 @@ export default class App extends Component {
       const after = todoData.slice(idx + 1);
       const newArr = [...before, ...after];
       return {
-        tododata: newArr
+        todoData: newArr
       };
     });
   };
