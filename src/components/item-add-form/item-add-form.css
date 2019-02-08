@@ -1,0 +1,7 @@
+.btn-add:hover,
+.btn-add:active,
+.btn-add:focus {
+  background-color: #ffc118;
+  color: rgb(30, 144, 255);
+  border: 2px solid #ffc118;
+}

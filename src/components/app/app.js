@@ -4,6 +4,7 @@ import AppHeader from "../app-header";
 import SeachPanel from "../seach-panel";
 import ItemStatusFilter from "../item-status-filter";
 import TodoList from "../todo-list";
+import ItemAddForm from "../item-add-form";
 
 import "./app.css";
 
@@ -37,6 +38,7 @@ export default class App extends Component {
           <ItemStatusFilter />
         </div>
         <TodoList todos={this.state.todoData} onDeleted={this.makeDelete} />
+        <ItemAddForm />
       </div>
     );
   }
