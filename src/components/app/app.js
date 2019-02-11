@@ -16,7 +16,8 @@ export default class App extends Component {
       { label: "Drink Coffee", important: false, id: 1 },
       { label: "Go in for sports", important: false, id: 2 },
       { label: "Study Bible", important: true, id: 3 },
-      { label: "Feed the cat", important: false, id: 4 }
+      { label: "Feed the cat", important: false, id: 4 },
+      { label: "Read book of Hemingway", important: false, id: 5 }
     ]
   };
   makeDelete = id => {
@@ -43,6 +44,12 @@ export default class App extends Component {
       };
     });
   };
+  makeToggleImportant = id => {
+    console.log("Toggle important", id);
+  };
+  makeToggleDone = id => {
+    console.log("Done", id);
+  };
 
   render() {
     return (
@@ -52,7 +59,12 @@ export default class App extends Component {
           <SeachPanel />
           <ItemStatusFilter />
         </div>
-        <TodoList todos={this.state.todoData} onDeleted={this.makeDelete} />
+        <TodoList
+          todos={this.state.todoData}
+          onDeleted={this.makeDelete}
+          onToggleImportant={this.makeToggleImportant}
+          onToggleDone={this.makeToggleDone}
+        />
         <ItemAddForm onAddItem={this.makeNewItem} />
       </div>
     );
