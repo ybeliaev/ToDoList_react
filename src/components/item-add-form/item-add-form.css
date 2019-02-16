@@ -8,3 +8,12 @@
   color: rgb(30, 144, 255);
   border: 2px solid #ffc118;
 }
+.item-add-form {
+  display: flex;
+}
+.input-add {
+  flex: 1;
+  margin-right: 8px;
+  padding: 5px;
+  border-radius: 4px;
+}

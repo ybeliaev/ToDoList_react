@@ -13,6 +13,12 @@ body {
 ul {
   list-style: none;
 }
+input {
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 .todo-app {
   margin: 10px auto;
   padding: 10px;
