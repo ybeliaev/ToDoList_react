@@ -84,7 +84,7 @@ export default class App extends Component {
       return items;
     }
     return items.filter(elem => {
-      return elem.label.indexOf(term) > -1;
+      return elem.label.toLowerCase().indexOf(term.toLowerCase()) > -1;
     });
   }
   render() {
