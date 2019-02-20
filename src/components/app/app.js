@@ -19,7 +19,8 @@ export default class App extends Component {
       this.createTodoItem("Feed the cat"),
       this.createTodoItem("Read book of Hemingway")
     ],
-    term: ""
+    term: "",
+    filter: "Active"
   };
   createTodoItem(label) {
     return {
@@ -87,9 +88,21 @@ export default class App extends Component {
       return elem.label.toLowerCase().indexOf(term.toLowerCase()) > -1;
     });
   }
+  filter(items, filter) {
+    switch (filter) {
+      case "All":
+        return items;
+      case "Active":
+        return items.filter(elem => !elem.done);
+      case "Done":
+        return items.filter(elem => elem.done);
+      default:
+        return items;
+    }
+  }
   render() {
-    const { todoData, term } = this.state;
-    const visibleItems = this.search(todoData, term);
+    const { todoData, term, filter } = this.state;
+    const visibleItems = this.filter(this.search(todoData, term), filter);
     const doneCount = todoData.filter(el => el.done).length;
     const todoCount = todoData.length - doneCount;
     return (
