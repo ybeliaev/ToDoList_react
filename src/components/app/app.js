@@ -19,15 +19,15 @@ export default class App extends Component {
       this.createTodoItem("Feed the cat"),
       this.createTodoItem("Read book of Hemingway")
     ],
-    term: "",
-    filter: "Active"
+    search: "",
+    filter: "all"
   };
   createTodoItem(label) {
     return {
       label,
       important: false,
       done: false,
-      id: this.maxIdx++
+      id: ++this.maxIdx
     };
   }
   makeDelete = id => {
@@ -77,32 +77,32 @@ export default class App extends Component {
       };
     });
   };
-  makeSearch = term => {
-    this.setState({ term });
+  makeSearch = search => {
+    this.setState({ search });
   };
-  search(items, term) {
-    if (term === 0) {
+  search(items, search) {
+    if (search === 0) {
       return items;
     }
     return items.filter(elem => {
-      return elem.label.toLowerCase().indexOf(term.toLowerCase()) > -1;
+      return elem.label.toLowerCase().indexOf(search.toLowerCase()) > -1;
     });
   }
-  filter(items, filter) {
+  makeFilter(items, filter) {
     switch (filter) {
-      case "All":
+      case "all":
         return items;
-      case "Active":
+      case "active":
         return items.filter(elem => !elem.done);
-      case "Done":
+      case "done":
         return items.filter(elem => elem.done);
       default:
         return items;
     }
   }
   render() {
-    const { todoData, term, filter } = this.state;
-    const visibleItems = this.filter(this.search(todoData, term), filter);
+    const { todoData, search, filter } = this.state;
+    const visibleItems = this.makeFilter(this.search(todoData, search), filter);
     const doneCount = todoData.filter(el => el.done).length;
     const todoCount = todoData.length - doneCount;
     return (
@@ -110,7 +110,7 @@ export default class App extends Component {
         <AppHeader toDo={todoCount} done={doneCount} />
         <div className="top-panel">
           <SeachPanel makeSearchChange={this.makeSearch} />
-          <ItemStatusFilter />
+          <ItemStatusFilter currentFilter={filter} />
         </div>
         <TodoList
           todos={visibleItems}
