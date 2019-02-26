@@ -100,6 +100,9 @@ export default class App extends Component {
         return items;
     }
   }
+  makeFilterChange = filter => {
+    this.setState({ filter });
+  };
   render() {
     const { todoData, search, filter } = this.state;
     const visibleItems = this.makeFilter(this.search(todoData, search), filter);
