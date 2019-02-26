@@ -110,7 +110,10 @@ export default class App extends Component {
         <AppHeader toDo={todoCount} done={doneCount} />
         <div className="top-panel">
           <SeachPanel makeSearchChange={this.makeSearch} />
-          <ItemStatusFilter currentFilter={filter} />
+          <ItemStatusFilter
+            currentFilter={filter}
+            onFilterChange={this.makeFilterChange}
+          />
         </div>
         <TodoList
           todos={visibleItems}
