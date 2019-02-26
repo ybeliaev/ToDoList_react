@@ -8,6 +8,7 @@ export default class ItemStatusFilter extends Component {
     { name: "done", label: "Done" }
   ];
   render() {
+    const { currentFilter } = this.props;
     const buttons = this.buttons.map(({ name, label }) => {
       return (
         <button type="button" className="btn" key={name}>
