@@ -1,5 +1,5 @@
 .todo-list-item.important {
-  color: rgb(0, 204, 0);
+  color: rgb(0, 204, 160);
   font-weight: 500;
 }
 .todo-list-item {
@@ -32,13 +32,13 @@
 }
 
 .btn-exclamation {
-  border: 2px solid rgb(0, 204, 0);
+  border: 2px solid rgb(0, 204, 160);
   background-color: rgb(255, 255, 255);
   color: rgb(0, 204, 0);
 }
 .btn-exclamation:hover,
 .btn-exclamation:active,
 .btn-exclamation:focus {
-  background-color: rgb(0, 204, 0);
+  background-color: rgb(0, 204, 160);
   color: rgb(255, 255, 255);
 }
