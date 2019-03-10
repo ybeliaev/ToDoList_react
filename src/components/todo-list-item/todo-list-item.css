@@ -34,7 +34,7 @@
 .btn-exclamation {
   border: 2px solid rgb(0, 204, 160);
   background-color: rgb(255, 255, 255);
-  color: rgb(0, 204, 0);
+  color: rgb(0, 204, 160);
 }
 .btn-exclamation:hover,
 .btn-exclamation:active,
